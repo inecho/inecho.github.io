@@ -21,3 +21,6 @@ git commit -am "update of existing files" && git push origin master
 ```
 > Option -a stands for --all "commiting all changed files"  
 > Option -m stands for --message "commit message "
+
+## Working with Jekyll and AsciiDoc
+more to come
