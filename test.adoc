@@ -1,7 +1,7 @@
 :source-highlighter: coderay
 = AsciiDoc is Writing Zen
 Doc Writer <doc.writer@example.com>
-:toc:
+:toc: left
 :icons: font
 
 == Sussssssssaaasdas:wdasdsectiossssss
