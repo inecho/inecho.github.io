@@ -1,4 +1,6 @@
 # inecho.github.io
+Welcome to my gitpages doc..
+## Initial steps
 The first steps of publishing the website were:
 ```bash
 mkdir -p gitpages #in order to create a seperate folder
