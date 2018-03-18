@@ -9,5 +9,6 @@ git commit -m "first commit"
 git remote add origin git@github.com:inecho/inecho.github.io.git
 git push -u origin master
 ```
-The result is just a headline parsed from the README.md
-In order to check if an Testpage, created with AsciiDoctor, is suitable for GitPages a "test.html" was pushed onto the repo. Unfortunately this page was not displayed while the README still got parsed. The solution was to rename "test.html" to "index.html"
+The result is just a headline parsed from the `README.md`.
+
+In order to check if a testpage, created with AsciiDoctor, is suitable for GitPages a `test.html` was pushed onto the repo. Unfortunately this page was not displayed while the README still got parsed. The solution was to rename `test.html` to `index.html`
