@@ -19,3 +19,6 @@ Commiting further changes made on the existing files, a handy push combo is:
 ```bash
 git commit -am "update of existing files" && git push origin master
 ```
+> Option -a stands for --all "commiting all changes files"
+> Option -m stands for --message "commit message "
+ 
