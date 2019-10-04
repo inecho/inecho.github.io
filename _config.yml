@@ -3,7 +3,7 @@ remote_theme: 'epidrome/cover-card'
 
 # Title and tag line
 title: ''
-description: 'Comming soon..'
+description: 'Coming soon ...'
 
 # Images
 avatar: 'avatar.gif'
@@ -12,14 +12,14 @@ favicon: 'favicon.ico'
 
 # Online profiles
 #dribbble: 'mydribbble'
-facebook: 'myfacebook'
-twitter: 'mytwitter'
-#linkedin: 'mylinkedin'
-instagram: 'myinsta'
+#facebook: 'myfacebook'
+#twitter: 'mytwitter'
+linkedin: 'rudolf-metzler'
+#instagram: 'myinsta'
 #pinterest: 'mypinterest'
-youtube: 'myyoutube'
-github-user: 'mygithub'
-#gitlab-user: ''
+#youtube: 'myyoutube'
+github-user: 'inecho'
+gitlab-user: 'inecho'
 #codepen: ''
 #steam: ''
 #soundcloud: ''
@@ -28,12 +28,12 @@ github-user: 'mygithub'
 #reddit: ''
 #rubygems: ''
 #medium:  ''
-tumblr: 'mytumblr'
-weibo: 'myweibo'
-vk: 'myvk'
-blog_url: 'myblog.blog.com'
-email: 'hello@example.com'
-messenger: 'myfbchat'
+#tumblr: 'mytumblr'
+#weibo: 'myweibo'
+#vk: 'myvk'
+#blog_url: 'myblog.blog.com'
+email: 'contac@rmetzler.com'
+#messenger: 'myfbchat'
 
 social-links-order: [github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, vk, weibo, dribbble, messenger, blog_url, email]
 
@@ -78,5 +78,5 @@ social-links:
 
   - name: email
     url-scheme: 'mailto:'
-    url-pattern: 'contact@rmetzler.com'
+    url-pattern: '__USERNAME__'
     icon-class: fas fa-2x fa-envelope
