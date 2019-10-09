@@ -51,6 +51,14 @@ header {
     padding: 20px !important;
 }
 
+//for mobile devices
+.card-img {
+    max-width: 250px;
+    // max-height: 70px;
+    min-width: 150px;
+    object-fit: cover;
+}
+
 .card .edu-and-work {
     // background-image: url("/assets/img/noisy-texture.png");
     background-image: url("/assets/img/img-noise.png");
