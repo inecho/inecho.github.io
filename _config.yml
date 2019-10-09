@@ -32,7 +32,7 @@ gitlab-user: 'inecho'
 #weibo: 'myweibo'
 #vk: 'myvk'
 #blog_url: 'myblog.blog.com'
-email: 'contac@rmetzler.com'
+email: 'contact@rmetzler.com'
 #messenger: 'myfbchat'
 
 social-links-order: [github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, vk, weibo, dribbble, messenger, blog_url, email]
