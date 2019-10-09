@@ -1,0 +1,208 @@
+--- 
+layout: default 
+---
+
+    <div class="row">
+
+    <div class="col-lg-8">
+
+        <!-- <div class="card">
+            <h1 class="card-title">About Me</h1>
+
+            <p> {{ site.author_bio }} </p>
+        </div> -->
+
+    
+        <div class="card">
+            <div class="card-body">
+                <div class="edu-and-work">
+                    <h1 class="card-title">Education</h1>
+                    <br>
+
+                {%assign edu = site.edu | sort:'date' | reverse %}
+                {% for e in edu %}
+
+                    {% if e.status %}
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                            <div class="col-md-9">
+                                <div class="card">
+                                    <div class="row">
+                                        
+                                        <div class="col-md-3">
+                                            {% if e.link %}
+                                            <a href="{{e.link}}" target="blank">
+                                                <img src="/assets/img/edu/{{e.logo}}" class="card-img" />
+                                            </a>
+                                            {%else%}
+                                                <img src="/assets/img/edu/{{e.logo}}" class="card-img" />
+                                            {%endif%}
+                                        </div>
+                                        
+                                        <div class="col-md-9">
+                                            <h5 class="experience-title">{{e.status }}</h5>
+                                            <h6 class="experience-info"> {{e.institution}} </h6>
+                                            <h7 class="experience-info"> 
+                                                <small class="text-muted">
+                                                    <i class="fas fa-plane-departure"> </i>
+                                                </small> &nbsp;
+                                                {{e.period}} 
+                                            </h7>
+                                            <p class="experience-desc"> {{e.description}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <p></p>
+                    {%continue%}
+                    {% endif %}
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        {% if e.link %}
+                        <a href="{{e.link}}" target="blank">
+                            <img src="/assets/img/edu/{{e.logo}}" class="card-img" />
+                        </a>
+                        {%else%}
+                            <img src="/assets/img/edu/{{e.logo}}" class="card-img" />
+                        {%endif%}
+                    </div>
+                    <div class="col-md-8">
+                        <h4 class="experience-title">{{e.title }}</h4>
+                        <h6 class="experience-info">{{e.institution}}</h6>
+                        <h6 class="experience-info">
+                        <small class="text-muted">
+                                <i class="fas fa-user-graduate"> </i>
+                            </small> &nbsp;
+                        {{e.period}}</h6>
+                        <p class="experience-desc"> {{e.description}}</p>
+                    </div>
+                </div>
+
+                {% if forloop.last %}
+                    {% break %}
+                {% endif %}
+                
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+        <div class="card">
+            <div class="card-body">
+                    <div class="edu-and-work">
+            <h1 class="card-title"> Work Experience</h1>
+            <br />
+
+            {% for job in site.jobs %}
+            {%assign lang = job.lang | strip %}
+            {% if lang != 'eng' %} {% continue %} {% endif %}
+                <div class="row">
+                    <div class="col-md-2">
+                        <img class="card-img" src="/assets/img/work/{{ job.logo }}" />
+                    </div>
+                    <div class="col-md-8">
+                        <h4 class="experience-title">{{ job.position }}</h4>
+                        
+                        {% if job.link %}
+                            <a href="{{job.link}}" target="blank">
+                                <h6 class="experience-info">{{ job.company }}</h6>
+                            </a>
+                        {% else %}
+                            <h6 class="experience-info">{{ job.company }}</h6>
+                        {% endif %}
+
+                        <h6 class="experience-info">{{ job.period }}</h6>
+                        <p class="experience-desc">{{ job.content }}</p>
+
+                    </div>
+                </div>
+            
+                {% if forloop.last %}
+                    {% break %}
+                {% endif %}
+                <br />
+            {% endfor %}
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-lg-4">
+
+        <div class="card">
+
+            <h6>
+                <i class="fas fa-map-marker-alt"></i> {{ site.author_location }}</h6>
+            <h6>
+                <i class="fas fa-envelope"></i> {{ site.author_email }}</h6>
+            <h6>
+                <!-- <i class="fas fa-link"></i> {{ site.author_website_url }} </h6> -->
+            <br>
+            {% include webgis.html %}
+
+        </div>
+
+        <!-- Skills with progress -->
+        <div class="card">
+            <h1> Skills </h1>
+            <hr>
+            {% for skill in site.skills %}
+            {% if  skill.lang != 'eng'%} {% continue %} {% endif %}
+                {{ skill.content }}
+            {% endfor %}
+            <!-- <p> Inkscape, Git, Linux </p>
+
+            <span>HTML, CSS, JavaScript within Jekyll</span>
+            <div class="progress">
+                    <div class="progress-bar" style="width: 20%"> 20% </div>
+                    <!-- Warum geht nicht diese?     -->
+                    <!-- <script type="text/javascript">
+                                    $(function () {
+                                    $('.progress-bar')
+                                    .tooltip({
+                                        title: "60%",
+                                        html: true} 
+                                        )
+                                        .tooltip('show'); });
+                        </script> -->
+            <!-- </div>
+            <p></p>
+            <span>C/C++</span>
+            <div class="progress">
+                    <div class="progress-bar" style="width: 40%"> 40% </div>
+            </div>
+
+            <p></p>
+            <span>Python</span>
+            <div class="progress">
+                    <div class="progress-bar" style="width: 40%"> 40% </div>
+            </div> -->
+
+        </div>
+
+        <div class="card">
+                <h1> Languages </h1>
+                <hr>
+                <span>🇩🇪 German</span>
+                <div class="progress" style="height:18px">
+                        <div class="progress-bar bg-info" style="width: 100%"> <b>Native</b> </div>
+                </div>
+                <p></p>
+                <span>🇷🇺 Russian</span>
+                <div class="progress" style="height:18px">
+                        <div class="progress-bar bg-info" style="width: 100%"> <b>Native</b> </div>
+                </div>
+                <p></p>
+                <span>🇬🇧 English</span>
+                <div class="progress" style="height:18px">
+                        <div class="progress-bar bg-info" style="width: 80%"> <b>Level C1</b> </div>
+                </div>
+        </div>
+
+
+
+
+    </div>
+    </div>

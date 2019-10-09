@@ -1,0 +1,89 @@
+<div id="mapContainer">
+    <div id="map-containerDiv">
+        <div id="mapid"></div>
+    </div>
+</div>
+
+<script>
+    map = L.map('mapid').setView([53.545501, 9.98], 12);
+
+    L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
+    attribution: '<a href="http://stamen.com">Stamen Design</a> &mdash; &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    subdomains: 'abcd',
+    minZoom: 1,
+    maxZoom: 16,
+    ext: 'jpg'
+    }).addTo(map);
+
+    map.on('click', function(e){ console.log('e', e.latlng);});
+
+    var textMarkersBig = [
+        {'html': 'Cartography', latlng: {lat: 53.545501, lng: 9.98} },
+        {'html': 'Sensors', latlng: {lat: 53.584964633268726, lng: 10.005} },
+        {'html': 'GIS', latlng: {lat: 53.554, lng: 9.92 } }
+    ]
+    for(var i = 0; i < textMarkersBig.length; i++){
+        var icon =  L.divIcon({className: 'parallax-marker label big', html: textMarkersBig[i].html, iconSize: [200, 36], iconAnchor: [100, 18]});
+        L.Marker.parallax(textMarkersBig[i].latlng,{icon: icon, parallaxZoffset: 4}).addTo(map);
+    }
+    var textMarkersMedium = [
+        {'html': 'Uncertainty', latlng: {lat: 53.5792576599901, lng: 9.93}},
+        {'html': 'Geodata', latlng: {lat: 53.571511249487614, lng: 10.016}},
+        {'html': 'UAV', latlng: {lat: 53.556, lng: 10.03}},
+        {'html': 'Probability Theory', latlng: {lat: 53.51, lng: 9.94}}
+        // geodata
+    ]
+    for(var i = 0; i < textMarkersMedium.length; i++){
+        var icon =  L.divIcon(
+            {className: 'parallax-marker label medium', 
+            html: textMarkersMedium[i].html, 
+            iconSize: [200, 36], 
+            iconAnchor: [100, 18]});
+        L.Marker.parallax(textMarkersMedium[i].latlng, {icon: icon, parallaxZoffset: 1} ).addTo(map);
+    }
+    var textMarkersSmall = [
+        {'html': 'Navigation', latlng: {lat: 53.5608046750403, lng: 9.962} },
+        {'html': 'Mapping', latlng: {lat: 53.536430796135264, lng: 10.02} }
+        // mapping
+    ]
+    for(var i = 0; i < textMarkersSmall.length; i++){
+        var icon =  L.divIcon({className: 'parallax-marker label small', html: textMarkersSmall[i].html, iconSize: [200, 36], iconAnchor: [100, 18]});
+        L.Marker.parallax(textMarkersSmall[i].latlng,{icon: icon, parallaxZoffset: 0.2}).addTo(map);
+    }
+    var textMarkersHuge = [
+        {'html': 'Surveying', latlng:  {lat: 53.53092133946649, lng: 9.902283630371096} },
+        {'html': 'Photogrammetry', latlng:  {lat: 53.568, lng: 9.914043884277346} }
+        // Geoinformation
+    ]
+    for(var i = 0; i < textMarkersHuge.length; i++){
+        var icon =  L.divIcon({className: 'parallax-marker label huge', html: textMarkersHuge[i].html, iconSize: [600, 36], iconAnchor: [100, 18]});
+        L.Marker.parallax(textMarkersHuge[i].latlng,{icon: icon, parallaxZoffset: 6}).addTo(map);
+    }
+    
+    var icon =  L.divIcon({className: 'tachy medium',  html: '<img src="/assets/img/tachy.png" height="250px">', iconAnchor: [0, 0]});
+        L.Marker.parallax({lat: 53.551083786329595, lng: 10.005904541015627},{icon: icon, parallaxZoffset: 10}).addTo(map);
+
+</script>
+
+<!-- 
+Application areas include:
+
+Aeromagnetic surveys
+Airborne geophysics
+Air navigation services
+Archaeological excavation and survey for GIS applications
+Coastal zone management and mapping
+Disaster informatics for disaster risk reduction and response
+The environment
+Infrastructure management
+Land management and reform
+Natural resource monitoring and development
+Seismic Interpretation
+Subdivision planning
+Urban and regional planning
+Oceanography
+Meteorology
+Parks
+Resource Management
+Climate Change/Environmental Monitoring 
+-->

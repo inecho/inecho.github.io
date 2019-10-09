@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
+
+body {
+    background-color: #D6DDE1 !important;
+    font-family: 'Lato', sans-serif !important;
+    // font-style: 'Thin' !important;
+}
+
+header {
+    background-color: #F5F5F5;
+    box-shadow: 10px 0px 8px;
+    height: 200px;
+    width: 100%;
+    padding: 11px;
+}
+
+.container-fluid {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.fa-calendar {
+    content: "\f073";
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    // margin-left: 10px;
+}
+
+.profile-name {
+    margin-top: 30px;
+}
+
+.profile-bio,
+.profile-links {
+    margin-top: 5px;
+}
+
+.border {
+    border: 1px solid #000;
+}
+
+.center {
+    text-align: center;
+}
+
+.card {
+    margin: 10px !important;
+    padding: 20px !important;
+}
+
+.card .edu-and-work {
+    // background-image: url("/assets/img/noisy-texture.png");
+    background-image: url("/assets/img/img-noise.png");
+}
+
+.edu-and-work .card{
+    background-image: url("/assets/img/noisy-texture2.png");
+    margin-bottom: 30px;
+    -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.1), -1px 0 2px rgba(0,0,0,0.05);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1), -1px 0 2px rgba(0,0,0,0.05);
+    // background-image: url("/assets/img/img-noise.png");
+}
+
+.social-link {
+    color: #262222;
+    font-size: 15px;
+    padding: 5px;
+    margin: 2px;
+}
+
+#navigation {
+    margin-top: 100px;
+    margin-right: 0px;
+}
+
+.nav-link {
+    font-size: 24px !important;
+    color: #000;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    padding: 20px;
+    background-color: #F5F5F5;
+}
+
+.company-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.project-img {
+    width: 300px;
+    height: 200px;
+}
+
+.author-profile-img {
+    width: 50px;
+    height: 50px;
+}
+
+.project-desc {
+    float: left;
+}
+
+.experience-info {
+    font-family: 'Lora', sans-serif !important;
+}
+
+.project-link {
+    color: gray;
+    font-size: 15px;
+}
+
+.card-header {
+    border-radius: 0% !important;
+}
+
+.blog-post {
+    width: 350px;
+    height: auto;
+    margin: 20px !important;
+}
+
+.responsive-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+// Resizable Leaflet Map https://stackoverflow.com/questions/23273038/when-resizing-a-leaflet-map-how-can-i-keep-the-map-centered/29787856#29787856
+#mapContainer { 
+    width:100%; 
+    height: 450px; 
+    position:relative; 
+}
+
+#map-containerDiv { 
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:0; 
+}
+
+#mapid { 
+    width: 100%;
+    height: 100%;	
+}
+// --- END Resizable Leaflet Map
+
+.parallax-marker.label{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(98, 56, 128);
+    text-transform: uppercase;
+    text-shadow: rgb(255, 255, 255) 2px 0px 2px, 
+                 rgb(255, 255, 255) -2px 0px 2px, 
+                 rgb(255, 255, 255) 0px -2px 2px, 
+                 rgb(255, 255, 255) 0px 2px 2px;
+}
+.parallax-marker.label.huge{ font-size: 48px; width: 450px; color: rgba(39, 33, 39, 0.4); text-shadow: none;}
+.parallax-marker.label.big{ font-size: 24px; }
+.parallax-marker.label.medium{ font-size: 16px; color: rgb(38, 80, 197); font-weight: normal;}
+.parallax-marker.label.small{  font-size: 14px; text-transform: none; font-weight: normal; color: rgb(66, 61, 61); }
+
+
+pre,
+code {
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-family: Courier, monospace;
+    font-size: 16px;
+    background-color: #F4F6F8;
+    padding: 5px;
+    display: block;
+}
+
+@media (min-width: 320px) and (max-width: 780px) {
+    header {
+        height: auto;
+        text-align: center;
+    }
+    .blog-post {
+        width: 300px;
+        height: auto;
+        margin-left: -20px !important;
+    }
+}

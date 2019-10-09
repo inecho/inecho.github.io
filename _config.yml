@@ -1,82 +1,34 @@
-# Theme
-remote_theme: 'epidrome/cover-card'
+title: Rudolf Metzler
+subtitle: M.Sc. Geomatics Engineering
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Title and tag line
-title: ''
-description: 'Coming soon ...'
+author_logo: me.png
+disqus_shortname: rmetzler  #for comments using disqus
+author: Rudolf Metzler
+author_bio: "
+Kernaussage: Motivierter abitionierter Absolvent<br>
+Recently graduated master student from Hamburg, Germany. 
+I made this website to show my motivation about programming and its application.
+As an engineer, I see software tools as an important key to solve problems.
+"
+author_email: "contact@rmetzler.com"
+author_location: Hamburg, Germany
+author_website_url: "https://rmetzler.com"
 
-# Images
-avatar: 'avatar.gif'
-background: 'background.gif'
-favicon: 'favicon.ico'
+# social links
+#twitter_username: yourusername
+github_username:  inecho
+gitlab_username:  inecho
+linkedin_username: rudolf-metzler
+soundcloud_username: rstation
+mixcloud_username: rstation
 
-# Online profiles
-#dribbble: 'mydribbble'
-#facebook: 'myfacebook'
-#twitter: 'mytwitter'
-linkedin: 'rudolf-metzler'
-#instagram: 'myinsta'
-#pinterest: 'mypinterest'
-#youtube: 'myyoutube'
-github-user: 'inecho'
-gitlab-user: 'inecho'
-#codepen: ''
-#steam: ''
-#soundcloud: ''
-#lastfm: ''
-#stack-overflow: ''
-#reddit: ''
-#rubygems: ''
-#medium:  ''
-#tumblr: 'mytumblr'
-#weibo: 'myweibo'
-#vk: 'myvk'
-#blog_url: 'myblog.blog.com'
-email: 'contact@rmetzler.com'
-#messenger: 'myfbchat'
-
-social-links-order: [github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, vk, weibo, dribbble, messenger, blog_url, email]
-
-# Advanced settings
-plugins:
-  - jekyll-remote-theme
-
-# Yaml manifest of supported social links
-# Requirements:
-# `name`
-#     - plain-text name of the site (e.g. twitter)
-#     - **mandatory**
-# `url-pattern`
-#     - site URL pattern containing a placeholder string (e.g. twitter.com/__USERNAME__)
-#     - placeholder will be replaced by username or value specified in _config.yml (e.g. twitter.com/mytwitter)
-#     - **mandatory**
-# `url-scheme`
-#     - the hardcoded URI/URN url-scheme (e.g. https://)
-#     - can be one of: ['https://', 'http://', 'mailto:']
-#     - defaults to '//'
-#     - **optional**
-# `icon-class`
-#     - the font awesome icon class names
-#     - font-awesome free and supports `fas` (solid) and `fab` (brands) styles
-#     - defaults to `fab` style and uses value of `name` attribute (e.g. fab fa-2x fa-twitter)
-#     - **optional**
-social-links:
-  - name: linkedin
-    url-pattern: linkedin.com/in/__USERNAME__
-
-  - name: github-user
-    url-pattern: github.com/inecho
-    icon-class: fab fa-2x fa-github
-
-  - name: gitlab-user
-    url-pattern: gitlab.com/inecho
-    icon-class: fab fa-2x fa-gitlab
-
-  - name: blog_url
-    url-pattern: '__USERNAME__'
-    icon-class: fas fa-2x fa-tags
-
-  - name: email
-    url-scheme: 'mailto:'
-    url-pattern: '__USERNAME__'
-    icon-class: fas fa-2x fa-envelope
+collections:
+  - jobs
+  - edu
+  - skills
