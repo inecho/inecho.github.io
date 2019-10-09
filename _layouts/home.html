@@ -6,12 +6,6 @@ layout: default
 
     <div class="col-lg-8">
 
-        <!-- <div class="card">
-            <h1 class="card-title">About Me</h1>
-
-            <p> {{ site.author_bio }} </p>
-        </div> -->
-
     
         <div class="card">
             <div class="card-body">
@@ -137,8 +131,6 @@ layout: default
                 <i class="fas fa-map-marker-alt"></i> {{ site.author_location }}</h6>
             <h6>
                 <i class="fas fa-envelope"></i> {{ site.author_email }}</h6>
-            <h6>
-                <!-- <i class="fas fa-link"></i> {{ site.author_website_url }} </h6> -->
             <br>
             {% include webgis.html %}
 
@@ -152,34 +144,6 @@ layout: default
             {% if  skill.lang != 'eng'%} {% continue %} {% endif %}
                 {{ skill.content }}
             {% endfor %}
-            <!-- <p> Inkscape, Git, Linux </p>
-
-            <span>HTML, CSS, JavaScript within Jekyll</span>
-            <div class="progress">
-                    <div class="progress-bar" style="width: 20%"> 20% </div>
-                    <!-- Warum geht nicht diese?     -->
-                    <!-- <script type="text/javascript">
-                                    $(function () {
-                                    $('.progress-bar')
-                                    .tooltip({
-                                        title: "60%",
-                                        html: true} 
-                                        )
-                                        .tooltip('show'); });
-                        </script> -->
-            <!-- </div>
-            <p></p>
-            <span>C/C++</span>
-            <div class="progress">
-                    <div class="progress-bar" style="width: 40%"> 40% </div>
-            </div>
-
-            <p></p>
-            <span>Python</span>
-            <div class="progress">
-                    <div class="progress-bar" style="width: 40%"> 40% </div>
-            </div> -->
-
         </div>
 
         <div class="card">

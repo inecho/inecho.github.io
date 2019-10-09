@@ -5,13 +5,6 @@ layout: default
     <div class="row">
 
     <div class="col-lg-8">
-
-        <!-- <div class="card">
-            <h1 class="card-title">About Me</h1>
-
-            <p> {{ site.author_bio }} </p>
-        </div> -->
-
     
         <div class="card">
             <div class="card-body">
@@ -138,7 +131,6 @@ layout: default
             <h6>
                 <i class="fas fa-envelope"></i> {{ site.author_email }}</h6>
             <h6>
-                <!-- <i class="fas fa-link"></i> {{ site.author_website_url }} </h6> -->
                 <br>
 
                 {% include webgis.html %}
@@ -153,34 +145,6 @@ layout: default
             {% if  skill.lang != 'de'%} {% continue %} {% endif %}
                 {{ skill.content }}
             {% endfor %}
-            <!-- <p> Inkscape, Git, Linux </p>
-
-            <span>HTML, CSS, JavaScript within Jekyll</span>
-            <div class="progress">
-                    <div class="progress-bar" style="width: 20%"> 20% </div>
-                    <!-- Warum geht nicht diese?     -->
-                    <!-- <script type="text/javascript">
-                                    $(function () {
-                                    $('.progress-bar')
-                                    .tooltip({
-                                        title: "60%",
-                                        html: true} 
-                                        )
-                                        .tooltip('show'); });
-                        </script> -->
-            <!-- </div>
-            <p></p>
-            <span>C/C++</span>
-            <div class="progress">
-                    <div class="progress-bar" style="width: 40%"> 40% </div>
-            </div>
-
-            <p></p>
-            <span>Python</span>
-            <div class="progress">
-                    <div class="progress-bar" style="width: 40%"> 40% </div>
-            </div> -->
-
         </div>
 
         <div class="card">
@@ -201,16 +165,6 @@ layout: default
                         <div class="progress-bar bg-info" style="width: 80%"> <b>Level C1</b> </div>
                 </div>
         </div>
-
-
-
-        <!-- Hier WMS einfügen -->
-        <!-- <div class="card">
-            <h1> Where da hood at?   </h1>
-            <iframe width="500" height="500" 
-            src="https://maps.google.com/maps?q=Hamburg&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-        </div> -->
 
     </div>
     </div>
